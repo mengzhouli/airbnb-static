@@ -1,0 +1,95 @@
+<!-- Read from data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+<div class="banner" style="background: linear-gradient(-225deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%), url('<%= image_path flat.picture %>'); height: 40vh; background-position: center;">
+</div>
+<div class="flat-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-1 ">
+        <div class="owner-card">
+          <div class="owner-card-info text-center">
+            <%= image_tag flat.owner_picture, class: "avatar-large" %>
+            <p><%= flat.owner_name %></p>
+          </div>
+          <div class="owner-flat-info">
+            <h5><%= flat.summary %></h5>
+            <p><%= flat.city %></p>
+            <i class="fa fa-star"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="booking-content text-center">
+        <h5>Book this flat</h5>
+        <form action="#">
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="checkin" id="checkin">
+            </div>
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="checkout" id="checkout">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <select name="" id="" class="form-control input">
+                <option value="1">1 person</option>
+                <option value="2">2 persons</option>
+                <option value="3">3 persons</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <input type="submit" class="btn btn-danger" value="Book it">
+            </div>
+          </div>
+        </form>
+  </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="info-wrapper">
+  <hr>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-10 col-sm-offset-1">
+        <h3>About this flat</h3>
+        <p><%= flat.summary%></p>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <p>The Space</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Accomodates: <em><%= flat.accomodates%></em></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <li>Beds: <em><%= flat.beds%></em></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-sm-2">
+            <p>Amenities</p>
+          </div>
+          <div class="col-xs-12 col-sm-4">
+            <ul class="list-unstyled">
+              <% if flat. wifi == true %>
+                <li><i class="fa fa-wifi"></i><em>wifi</em></li>
+              <% end%>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,36 @@
+anne:
+  owner_name: Anne Noidea
+  picture: card-brussels.jpeg
+  room_picture: https://unsplash.it/500/300?image=1078
+  owner_picture: anne.jpg
+  rating: 5
+  name: Anne's home
+  summary: Lovely House
+  city: Brussels, Belgium
+  accomodates: 4
+  wifi: true
+  beds: 2
+seb:
+  owner_name: Sebastien Saunier
+  picture: card-paris.jpg
+  room_picture: https://unsplash.it/500/300?image=1065
+  owner_picture: seb.jpg
+  rating: 3
+  name: Seb's home
+  summary: Charming room in Montmartre
+  accomodates: 2
+  city: Paris, France
+  wifi: true
+  beds: 1
+romain:
+  owner_name: Romain Paillard
+  picture: card-london.jpeg
+  room_picture: https://unsplash.it/500/300?image=1059
+  owner_picture: romain.jpeg
+  rating: 0
+  name: Romain's home
+  summary: Nice flat in Piccadilly
+  accomodates: 2
+  city: London, UK
+  wifi: false
+  beds: 1
